@@ -1,11 +1,15 @@
 *{
     margin: 0%;
     padding: 0%;
-    /* overflow-x: hidden; */
     scrollbar-width: none;
     box-sizing: border-box;
-    /* backgroun d-color: black; */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: fold-it;
+    /* color: white; */
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+@font-face {
+    font-family: fold-it;
+    src: url(fontStyles/Josefin_Slab/static/JosefinSlab-Regular.ttf);
 }
 
 .dark{
@@ -215,6 +219,13 @@ nav{
     .link h3{
         font-size: 1rem;
     }
+    .exp a{
+        font-size: 1.5rem !important;
+    }
+    .cont .cont .bi-instagram{
+        font-size: 1rem !important;
+    }
+    
 }
  
 /*                                     full stack development */
@@ -250,10 +261,10 @@ nav{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 3rem;
-    /* background-color: #f5dd04; */
     text-align: center ;
-    color: yellow;
-    text-shadow: 2px 2px 3px rgba(94, 92, 92, 0.821);
+    color: transparent;
+    background: linear-gradient(to right,yellow,rgb(4, 251, 95));
+    background-clip: text;
     transition: 1.5s;
 }
 .disp{
@@ -266,9 +277,6 @@ nav{
     transition: 1.5s;
 }
 
-.full-stack-developer p span{
-        font-weight: 600;
-} 
 .full-stack-developer:hover.full-stack-developer h1 {
     padding-bottom: 60px;
 }
@@ -339,10 +347,12 @@ nav{
     text-align: center;
     padding: 60px;
     text-transform: uppercase;
-    color: yellow;
+    color: black;
+    font-size: 4rem;
+    color: black;
+    text-shadow: 2px 2px 4px grey;
+    text-transform: uppercase;
     width: 100% !important;
-    text-shadow: 1px 3px 5px grey;
-    font-size: 4.3rem !important;
 }
 .link h1,
 .link h1 a{
@@ -356,78 +366,83 @@ nav{
 }
 .link h3{
     text-transform: uppercase;
-    color: yellow;
+    color: rgb(12, 12, 12);
 }
 
 /*                                    contact */
 
-.cont .bi-instagram{
+.cont .cont .bi-instagram{
     font-size: 4rem ;
-    background:linear-gradient(to top,blue,red) !important;
-    background-clip: text  !important;
-    color: transparent !important;
-    text-shadow: none !important;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    align-items:center;
+    background:linear-gradient(to top,blue,red);
+    background-clip: text  ;
+    color: transparent ;
 }
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .con{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    color: black;
+    text-shadow: 2px 2px 4px grey;
+    text-transform: uppercase;
+    padding: 60px;
+}
+.cont{
+    background-color: #fff;
+    width: 90%;
+    box-shadow: 0px 0px 15px grey;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    transition: 1s;
+}
+.cont:hover{
+    transition: 1s;
+    background: linear-gradient(to right,yellow,rgb(4, 251, 95));
+}
+.exp{
+    margin: 2%;
+    width: 90%;
+    border-radius: 22px;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #fff;
+}
+.exp a{
+    font-size: 3rem;
+    text-decoration: none;
+    background:linear-gradient(to left,blue,red);
+    background-clip: text  ;
+    color: transparent ;
+    padding-left: 5%;
+}
+
 .bi-mailbox{
     color: rgb(22, 173, 207) !important;
     font-size: 4rem;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    align-items:center;
 
 }
 .bi-github{
     color: rgb(235, 177, 186) !important;
     font-size: 4rem;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-
 }
 .bi-linkedin{
     color: rgb(21, 48, 157) !important;
     font-size: 4rem;
-    width: 50%;
-    justify-content: center;
-    display: flex;
-    align-items:center;
-    
 }
-.bi-github p,
-.bi-instagram p a,
-.bi-linkedin p,
-.bi-mailbox p a{
-    text-decoration: none;
-    color: grey;
-    text-shadow: 2px 2px 1px #f5dd04;
-    font-size: 2.5rem;
-    margin: 0px 30px 0px 20px;
-    cursor: pointer;
-}
-.contact .con{
-    text-align: center;
-    padding: 60px;
-    width: 100%;
-    font-size: 4rem !important;
-    color: transparent;
-    background: linear-gradient(yellow,black);
-    text
-    text-shadow: 2px 2px 5px grey;
-    text-transform: uppercase;
-}
-.cont{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    /* background-color: yellow; */
-}
+
+
+/*                                                          end */
 .end {
     background-color: #d2d2d235;
     margin-top: 60px !important;
