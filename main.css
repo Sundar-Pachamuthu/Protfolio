@@ -213,9 +213,7 @@ nav{
     .headerpara{
         text-align: center;
     }
-    .imgs img{
-        display: none !important; 
-    }
+    
     .link h3{
         font-size: 1rem;
     }
